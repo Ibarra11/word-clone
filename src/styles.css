@@ -161,6 +161,45 @@ h1 {
   outline-offset: 4px;
 }
 
+.keyboard-cell {
+  display: grid;
+  place-content: center;
+  flex: 1;
+  background-color: var(--color-gray-900);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.keyboard-cell.correct {
+  background-color: var(--color-success);
+}
+
+.keyboard-cell.incorrect {
+  background-color: var(--color-gray-500);
+}
+.keyboard-cell.misplaced {
+  background-color: var(--color-warning);
+}
+
+.keyboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 4px;
+}
+
+.keyboard-row:nth-child(2) {
+  margin-inline: 12px;
+}
+
+.keyboard-row:last-child {
+  margin-inline: 24px;
+}
+
 .banner {
   position: fixed;
   left: 0;
